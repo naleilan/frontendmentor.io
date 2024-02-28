@@ -46,6 +46,9 @@ body {
   display: flex;
   justify-content: center;
   padding: 3rem;
+  background-image: url("images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 /* - Mobile: 375px
 - Desktop: 1440px */
