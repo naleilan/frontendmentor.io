@@ -47,12 +47,20 @@ body {
 }
 /* - Mobile: 375px
 - Desktop: 1440px */
-@media (max-width: 375px) {
+/* @media (max-width: 750px) {
   .container {
-    width: 300px;
+    width: 350px;
   }
 }
+
+@media (mix-width: 750px) {
+  .container {
+    width: 40%;
+  }
+} */
+
 .container {
+  width: 55%;
   border-radius: 20px;
   background-color: #fff;
 }
