@@ -20,20 +20,15 @@
 }
 
 /* screen width is bigger or equal than 1440px */
-@media (min-width: 1440px) {
-  .container {
-    width: 45%;
-  }
-}
 
-@media (max-width: 375px) {
+/* @media (min-width: 800px) {
   .container {
     width: 300px;
   }
   html {
     font-size: 30%;
   }
-}
+} */
 
 html {
   font-size: 62.5%;
@@ -52,12 +47,14 @@ body {
 }
 /* - Mobile: 375px
 - Desktop: 1440px */
-
+@media (max-width: 375px) {
+  .container {
+    width: 300px;
+  }
+}
 .container {
-  /* width: 45%; */
   border-radius: 20px;
   background-color: #fff;
-  /* border: 1px solid #000; */
 }
 
 main {
