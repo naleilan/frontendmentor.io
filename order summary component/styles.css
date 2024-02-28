@@ -1,0 +1,147 @@
+:root {
+  /* Primary */
+
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+
+  /* Neutral */
+
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* screen width is bigger or equal than 1440px */
+@media (min-width: 1440px) {
+  .container {
+    width: 45%;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    width: 300px;
+  }
+  html {
+    font-size: 30%;
+  }
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  background-color: var(--Pale-blue);
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+}
+/* - Mobile: 375px
+- Desktop: 1440px */
+
+.container {
+  /* width: 45%; */
+  border-radius: 20px;
+  background-color: #fff;
+  /* border: 1px solid #000; */
+}
+
+main {
+  padding: 3rem;
+  border-radius: 20px;
+}
+
+.img-hero {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: 900;
+  color: var(--Dark-blue);
+}
+
+p {
+  margin-top: 1rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  color: var(--Desaturated-blue);
+  font-weight: 500;
+  text-align: center;
+}
+
+.middle {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2.5rem 2.5rem 1rem 2.5rem;
+}
+
+.middle :last-child {
+  justify-content: space-between;
+}
+
+.left {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.spans {
+  display: flex;
+  flex-direction: column;
+  color: var(--Dark-blue);
+}
+
+.change,
+.fi {
+  color: var(--Desaturated-blue);
+}
+
+.end {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  font-weight: 500;
+}
+
+.annual {
+  color: var(--Dark-blue);
+  font-weight: 700;
+}
+
+.btn {
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--Bright-blue);
+  color: var(--Very-pale-blue);
+  font-weight: 700;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: var(--Dark-blue);
+  font-weight: 700;
+  padding-top: 2rem;
+}
